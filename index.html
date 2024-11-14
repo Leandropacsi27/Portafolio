@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 
@@ -20,16 +20,16 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
 
                 </ul>
             </nav>
-            <div class="nav responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -145,7 +145,7 @@
                     <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
-                            <div class="progreso javascript">
+                            <div class="progreso">
                                 <span>75%</span>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                     <div class="skill">
                         <span>HTML & CSS</span>
                         <div class="barra-skill">
-                            <div class="progreso htmlcss">
+                            <div class="progreso">
                                 <span>65%</span>
                             </div>
                         </div>
@@ -161,7 +161,7 @@
                     <div class="skill">
                         <span>JAVA</span>
                         <div class="barra-skill">
-                            <div class="progreso java">
+                            <div class="progreso">
                                 <span>50%</span>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                     <div class="skill">
                         <span>wordpress</span>
                         <div class="barra-skill">
-                            <div class="progreso wordpress">
+                            <div class="progreso">
                                 <span>80%</span>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                     <div class="skill">
                         <span>DOTA2</span>
                         <div class="barra-skill">
-                            <div class="progreso dota2">
+                            <div class="progreso">
                                 <span>100%</span>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                     <div class="skill">
                         <span>Creatividad</span>
                         <div class="barra-skill">
-                            <div class="progreso creatividad">
+                            <div class="progreso">
                                 <span>100%</span>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                     <div class="skill">
                         <span>Dedicación</span>
                         <div class="barra-skill">
-                            <div class="progreso dedicacion">
+                            <div class="progreso">
                                 <span>70%</span>
                             </div>
                         </div>
@@ -205,7 +205,7 @@
                     <div class="skill">
                         <span>Project managment</span>
                         <div class="barra-skill">
-                            <div class="progreso project">
+                            <div class="progreso">
                                 <span>20%</span>
                             </div>
                         </div>
@@ -320,6 +320,110 @@
         </div>
 
     </section>
+    <!-- Seccion portafolio -->  
+     <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion contacto -->
+     <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Numero de telefono">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- mapa -->
+                <div class="col">                  
+                     <img src="img/ubicacion.png" alt="">
+                     <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Perulindo, Lima - Villa salvaje
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Mi numero es 977245791
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: leandropacsi27@gmail.com
+                            </li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- seccion footer -->
+      <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>  
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div> 
+      </footer>
+      <script src="script.js"></script>
 </body>
 
 </html>
