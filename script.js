@@ -251,3 +251,12 @@ function seleccionar(){
       });
     }
   })(jQuery);
+
+
+document.getElementById("downloadcv").addEventListener("click", function() {
+    // Crea un enlace temporal
+    const link = document.createElement("a");
+    link.href = "assets/CV-Leandro-Pacsi.pdf"; // Ruta del archivo PDF
+    link.download = "CV_Leandro.pdf"; // Nombre que tendrá el archivo al descargarse
+    link.click(); // Simula un clic en el enlace
+});

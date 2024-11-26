@@ -185,7 +185,6 @@ html {
 .sobremi .contenido-seccion {
     max-width: 1000px;
     margin: auto;
-    padding-left: 10px;
 }
 
 .sobremi h2 {
@@ -200,7 +199,7 @@ html {
     font-size: 22px;
     line-height: 25px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .sobremi .contenido-seccion p span {
@@ -571,6 +570,7 @@ footer .arriba {
 
 .footer-contenido p{
     font-size: 19px;
+    padding: 15px;
 }
 
 .footer-contenido p a{
@@ -628,13 +628,30 @@ footer .arriba {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
 
+    .sobremi .contenido-seccion p { 
+        text-align: center;
+    }
+
+    .footer-contenido{
+        padding: 50px;
+    }
+
+    .footer-contenido ul{
+        display: block;
+    }
+
+    .footer-contenido li{
+        padding-top: 25px;
     }
 
     
 }
 
 @media screen and (max-width:700px) {
+
+   
 
     .inicio .contenido-banner {
         display: block;
